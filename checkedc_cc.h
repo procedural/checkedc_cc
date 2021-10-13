@@ -26,34 +26,6 @@ https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a25
 #ifndef __CHECKEDC_CC_H
 #define __CHECKEDC_CC_H
 
-#undef cc_expr
-#undef cc_opt
-#undef cc_arg
-#undef cc_ptr
-#undef cc_array_ptr
-#undef cc_nt_array_ptr
-#undef cc_checked
-#undef cc_nt_checked
-#undef cc_unchecked
-#undef cc_bounds_only
-#undef cc_where
-#undef cc_dynamic_check
-#undef cc_dynamic_bounds_cast
-#undef cc_assume_bounds_cast
-#undef cc_return_value
-#undef cc_for_any
-#undef cc_itype_for_any
-#undef cc_opaque
-#undef cc_reveal
-#undef cc_and
-#undef cc_bounds
-#undef cc_byte_count
-#undef cc_count
-#undef cc_rel_align
-#undef cc_rel_align_value
-#undef cc_itype
-#undef cc_unknown
-
 #ifdef CHECKEDC_CC
 
 #define cc_expr(Expression) ((void)(Expression))
