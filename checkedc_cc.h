@@ -29,85 +29,90 @@ https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a25
 #undef cc_expr
 #undef cc_opt
 #undef cc_arg
-#undef ptr
-#undef array_ptr
-#undef nt_array_ptr
-#undef checked
-#undef nt_checked
-#undef unchecked
-#undef bounds_only
-#undef where
-#undef dynamic_check
-#undef dynamic_bounds_cast
-#undef assume_bounds_cast
-#undef return_value
-#undef for_any
-#undef itype_for_any
-#undef opaque
-#undef reveal
-#undef and
-#ifdef CHECKEDC_CC
-#undef bounds
-#undef byte_count
-#undef count
-#undef rel_align
-#undef rel_align_value
-#undef itype
-#undef unknown
-#endif /* #ifdef CHECKEDC_CC */
+#undef cc_ptr
+#undef cc_array_ptr
+#undef cc_nt_array_ptr
+#undef cc_checked
+#undef cc_nt_checked
+#undef cc_unchecked
+#undef cc_bounds_only
+#undef cc_where
+#undef cc_dynamic_check
+#undef cc_dynamic_bounds_cast
+#undef cc_assume_bounds_cast
+#undef cc_return_value
+#undef cc_for_any
+#undef cc_itype_for_any
+#undef cc_opaque
+#undef cc_reveal
+#undef cc_and
+#undef cc_bounds
+#undef cc_byte_count
+#undef cc_count
+#undef cc_rel_align
+#undef cc_rel_align_value
+#undef cc_itype
+#undef cc_unknown
 
 #ifdef CHECKEDC_CC
 
 #define cc_expr(Expression) ((void)(Expression))
 #define cc_opt(Statement)
 #define cc_arg(...)
-#define ptr(Type) Type *
-#define array_ptr(Type) Type *
-#define nt_array_ptr(Type) Type *
-#define checked
-#define nt_checked
-#define unchecked
-#define bounds_only
-#define where
-#define dynamic_check
-#define dynamic_bounds_cast
-#define assume_bounds_cast
-#define return_value
-#define for_any
-#define itype_for_any
-#define opaque
-#define reveal
-#define and
-#define bounds
-#define byte_count
-#define count
-#define rel_align
-#define rel_align_value
-#define itype
-#define unknown
+#define cc_ptr(Type) Type *
+#define cc_array_ptr(Type) Type *
+#define cc_nt_array_ptr(Type) Type *
+#define cc_checked
+#define cc_nt_checked
+#define cc_unchecked
+#define cc_bounds_only
+#define cc_where
+#define cc_dynamic_check
+#define cc_dynamic_bounds_cast
+#define cc_assume_bounds_cast
+#define cc_return_value
+#define cc_for_any
+#define cc_itype_for_any
+#define cc_opaque
+#define cc_reveal
+#define cc_and
+#define cc_bounds
+#define cc_byte_count
+#define cc_count
+#define cc_rel_align
+#define cc_rel_align_value
+#define cc_itype
+#define cc_unknown
 
 #else /* #ifdef CHECKEDC_CC */
 
 #define cc_expr(Expression) (Expression)
 #define cc_opt(Statement) Statement
 #define cc_arg(...) (__VA_ARGS__)
-#define ptr(Type) _Ptr<Type>
-#define array_ptr(Type) _Array_ptr<Type>
-#define nt_array_ptr(Type) _Nt_array_ptr<Type>
-#define checked _Checked
-#define nt_checked _Nt_checked
-#define unchecked _Unchecked
-#define bounds_only _Bounds_only
-#define where _Where
-#define dynamic_check _Dynamic_check
-#define dynamic_bounds_cast _Dynamic_bounds_cast
-#define assume_bounds_cast _Assume_bounds_cast
-#define return_value _Return_value
-#define for_any _For_any
-#define itype_for_any _Itype_for_any
-#define opaque _Opaque
-#define reveal _Reveal
-#define and _And
+#define cc_ptr(Type) _Ptr<Type>
+#define cc_array_ptr(Type) _Array_ptr<Type>
+#define cc_nt_array_ptr(Type) _Nt_array_ptr<Type>
+#define cc_checked _Checked
+#define cc_nt_checked _Nt_checked
+#define cc_unchecked _Unchecked
+#define cc_bounds_only _Bounds_only
+#define cc_where _Where
+#define cc_dynamic_check _Dynamic_check
+#define cc_dynamic_bounds_cast _Dynamic_bounds_cast
+#define cc_assume_bounds_cast _Assume_bounds_cast
+#define cc_return_value _Return_value
+#define cc_for_any _For_any
+#define cc_itype_for_any _Itype_for_any
+#define cc_opaque _Opaque
+#define cc_reveal _Reveal
+#define cc_and _And
+#define cc_bounds bounds
+#define cc_byte_count byte_count
+#define cc_count count
+#define cc_rel_align rel_align
+#define cc_rel_align_value rel_align_value
+#define cc_itype itype
+#define cc_unknown unknown
 
 #endif /* #ifdef CHECKEDC_CC */
 
