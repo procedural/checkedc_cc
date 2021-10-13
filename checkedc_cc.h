@@ -27,7 +27,6 @@ https://github.com/microsoft/checkedc/blob/d47eaf7f53dd00b6062cc43a2cd1435caf6cc
 
 #undef cc_expr
 #undef cc_opt
-#undef cc_ptr_type
 #undef cc_arg
 #undef ptr
 #undef array_ptr
@@ -51,11 +50,10 @@ https://github.com/microsoft/checkedc/blob/d47eaf7f53dd00b6062cc43a2cd1435caf6cc
 
 #define cc_expr(Expression) ((void)(Expression))
 #define cc_opt(Statement)
-#define cc_ptr_type(Type) Type *
 #define cc_arg(...)
-#define ptr
-#define array_ptr
-#define nt_array_ptr
+#define ptr(Type) Type *
+#define array_ptr(Type) Type *
+#define nt_array_ptr(Type) Type *
 #define checked
 #define nt_checked
 #define unchecked
@@ -75,11 +73,10 @@ https://github.com/microsoft/checkedc/blob/d47eaf7f53dd00b6062cc43a2cd1435caf6cc
 
 #define cc_expr(Expression) Expression
 #define cc_opt(Statement) Statement
-#define cc_ptr_type(Type) <Type>
 #define cc_arg(...) (__VA_ARGS__)
-#define ptr _Ptr
-#define array_ptr _Array_ptr
-#define nt_array_ptr _Nt_array_ptr
+#define ptr(Type) _Ptr<Type>
+#define array_ptr(Type) _Array_ptr<Type>
+#define nt_array_ptr(Type) _Nt_array_ptr<Type>
 #define checked _Checked
 #define nt_checked _Nt_checked
 #define unchecked _Unchecked
