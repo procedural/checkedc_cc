@@ -46,7 +46,7 @@ https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a25
 #undef opaque
 #undef reveal
 #undef and
-/*
+#ifdef CHECKEDC_CC
 #undef bounds
 #undef byte_count
 #undef count
@@ -54,7 +54,7 @@ https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a25
 #undef rel_align_value
 #undef itype
 #undef unknown
-*/
+#endif
 
 #ifdef CHECKEDC_CC
 
@@ -78,6 +78,13 @@ https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a25
 #define opaque
 #define reveal
 #define and
+#define bounds
+#define byte_count
+#define count
+#define rel_align
+#define rel_align_value
+#define itype
+#define unknown
 
 #else /* #ifdef CHECKEDC_CC */
 
