@@ -20,6 +20,7 @@ https://github.com/microsoft/checkedc/issues/470
 https://github.com/microsoft/checkedc/blob/d47eaf7f53dd00b6062cc43a2cd1435caf6cc145/include/stdchecked.h
 https://github.com/microsoft/checkedc/blob/d47eaf7f53dd00b6062cc43a2cd1435caf6cc145/spec/bounds_safety/checkedc.tex#L58-L76
 https://github.com/microsoft/checkedc/blob/d47eaf7f53dd00b6062cc43a2cd1435caf6cc145/spec/bounds_safety/core-extensions.tex#L24-L27
+https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a2500a4a
 */
 
 #ifndef __CHECKEDC_CC_H
