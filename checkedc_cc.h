@@ -54,7 +54,7 @@ https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a25
 #undef rel_align_value
 #undef itype
 #undef unknown
-#endif
+#endif /* #ifdef CHECKEDC_CC */
 
 #ifdef CHECKEDC_CC
 
