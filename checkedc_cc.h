@@ -71,7 +71,7 @@ https://github.com/microsoft/checkedc/blob/d47eaf7f53dd00b6062cc43a2cd1435caf6cc
 
 #else /* #ifdef CHECKEDC_CC */
 
-#define cc_expr(Expression) Expression
+#define cc_expr(Expression) (Expression)
 #define cc_opt(Statement) Statement
 #define cc_arg(...) (__VA_ARGS__)
 #define ptr(Type) _Ptr<Type>
