@@ -46,6 +46,15 @@ https://github.com/microsoft/checkedc/commit/0426d490206c0d9cecd8c309ba0aa662a25
 #undef opaque
 #undef reveal
 #undef and
+/*
+#undef bounds
+#undef byte_count
+#undef count
+#undef rel_align
+#undef rel_align_value
+#undef itype
+#undef unknown
+*/
 
 #ifdef CHECKEDC_CC
 
